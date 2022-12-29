@@ -2,7 +2,6 @@ import { memo, useEffect } from 'react'
 
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import TechnologyBox from 'components/TechnologyBox'
 
 import useTitle from 'hooks/useTitle'
 
@@ -59,7 +58,7 @@ const Background: React.FC = () => {
           <div>
             <p className="text-muted">
               Capacitação na concepção de sites e desenvolvimento frontend,
-              utilizando react e typescript, e interface com API's.
+              utilizando react e typescript, e interface com API.
             </p>
           </div>
         </TimeBox>
@@ -71,7 +70,7 @@ const Background: React.FC = () => {
           <div>
             <p className="text-muted">
               Capacitação na concepção de sites e desenvolvimento frontend,
-              utilizando react e typescript, e interface com API's.
+              utilizando react e typescript, e interface com API.
             </p>
           </div>
         </TimeBox>
@@ -102,8 +101,8 @@ const Background: React.FC = () => {
           Bachelor of Engineering (B.Eng.), Engenharia Mecânica Nota: Índice de
           Rendimento Acadêmico: 0,6958 (escala 0 a 1)
           <p className="text-muted">
-            TCC (2013) Área: Identificação de Sistemas Tema: "Identificação de
-            parâmetros modais utilizando o modelo Armax do software Matlab"
+            TCC (2013) Área: Identificação de Sistemas Tema: Identificação de
+            parâmetros modais utilizando o modelo Armax do software Matlab
             Algumas disciplinas: Desenho Mecânico, Resistência dos Materiais,
             Processos de fabricação, Usinagem, Conformação, Comando Numérico,
             Soldagem, Ensaios não destrutivos, Aspersão Térmica, Sistemas
