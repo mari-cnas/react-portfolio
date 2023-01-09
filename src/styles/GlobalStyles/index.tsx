@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 * {
@@ -11,22 +11,16 @@ html,body,#root{
     min-height: 100vh;
 }
 
-/* 
-body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 0;
-    flex: 1 0 auto;
-}
+
 
 footer {
     margin-top: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-} */
-
-
+   
+} 
+`
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(32, 35, 41);
 `

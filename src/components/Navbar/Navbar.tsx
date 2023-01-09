@@ -28,6 +28,7 @@ const Navbar: React.FC<IBaseComponentProps> = ({ children }) => {
             onClick={() => setIsMenuOpened(true)}
             size={18}
             color="white"
+            className="my-2"
           />
         </div>
         <MenuMobile

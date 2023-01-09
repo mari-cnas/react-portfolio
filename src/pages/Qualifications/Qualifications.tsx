@@ -29,7 +29,7 @@ const Qualifications: React.FC = () => {
   const setTitle = useTitle()
 
   useEffect(() => {
-    setTitle('Home')
+    setTitle('Qualifications')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -38,7 +38,7 @@ const Qualifications: React.FC = () => {
       <Header />
       <HomeContainer className="container d-flex flex-column ">
         <div className="my-3">
-          <h3>Technologies</h3>
+          <h3 className="text-center">Technologies</h3>
           <Row className="row-cols-1 row-cols-md-3 border-top border-3 border-warning">
             <Col className="d-flex flex-column align-items-center">
               <h4>Front-end</h4>
@@ -139,7 +139,7 @@ const Qualifications: React.FC = () => {
           </Row>
         </div>
         <div className="my-3 ">
-          <h3>Languages</h3>
+          <h3 className="text-center">Languages</h3>
           <div className="d-flex justify-content-center border-top border-3 border-warning ">
             <Technology className="d-flex me-2 my-2 align-items-baseline justify-content-center">
               <div className="me-2">

@@ -16,11 +16,11 @@ export const HeaderBg = styled.div`
 
   /* mouse over link */
   a:hover {
-    color: grey;
+    color: black;
   }
 
   /* selected link */
   a:active {
-    color: grey;
+    color: black;
   }
 `

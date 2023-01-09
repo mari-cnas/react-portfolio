@@ -1,6 +1,6 @@
 import { memo, useEffect } from 'react'
 
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button, Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
@@ -11,38 +11,54 @@ import Header from 'components/Header'
 
 import useTitle from 'hooks/useTitle'
 
+import { Wrapper } from 'styles/GlobalStyles'
+
 import avatar from '../../assets/avatar.png'
 import cover from '../../assets/cover.png'
+import CV from '../../assets/CV-MCN.pdf'
 import profile from '../../assets/profile.jpeg'
-import { HomeBg, HomeContainer, ImgBox, ImgCircle } from './style'
+import { HomeBg, ImgCircle, ProfileBtn } from './style'
 
 const Home: React.FC = () => {
   const { t, i18n } = useTranslation()
   const setTitle = useTitle()
 
   useEffect(() => {
-    setTitle('Home')
+    setTitle('')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
-    <HomeBg>
+    <Wrapper>
       <Header />
-      <HomeContainer>
-        <ImgBox image={cover} className="h-100 ">
-          <div className="container d-flex flex-column  ">
-            <ImgCircle src={profile} className="align-self-center my-5" />
-            <Link to="/qualifications">
-              <h1 className="text-center my-5" style={{ fontWeight: 'bold' }}>
-                {' '}
-                Frontend Developer
-              </h1>
-            </Link>
-          </div>
-        </ImgBox>
-      </HomeContainer>
+      <HomeBg image={cover} className=" d-none d-lg-block flex-grow-1">
+        <Container className="d-flex flex-column align-items-center justify-content-center h-100">
+          <ImgCircle src={profile} className="my-5" />
+          <h3 className="fw-bold">Mariana Carvalho Nascimento</h3>
+          <Link to="/qualifications">
+            <ProfileBtn> Frontend Developer</ProfileBtn>
+          </Link>
+          <a href={CV} download>
+            <ProfileBtn>Download CV</ProfileBtn>
+          </a>
+        </Container>
+      </HomeBg>
+      <HomeBg image={avatar} className="d-block d-lg-none flex-grow-1">
+        <Container className=" d-flex flex-column justify-content-center align-items-center ">
+          <ImgCircle src={profile} className=" my-5" />
+          <h1 className="text-center text-white">
+            Mariana Carvalho Nascimento
+          </h1>
+          <Link to="/qualifications">
+            <ProfileBtn> Frontend Developer</ProfileBtn>
+          </Link>
+          <a href={CV} download>
+            <ProfileBtn>Download CV</ProfileBtn>
+          </a>
+        </Container>
+      </HomeBg>
       <Footer />
-    </HomeBg>
+    </Wrapper>
   )
 }
 

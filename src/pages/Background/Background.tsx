@@ -11,7 +11,7 @@ const Background: React.FC = () => {
   const setTitle = useTitle()
 
   useEffect(() => {
-    setTitle('Home')
+    setTitle('Background')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
