@@ -17,7 +17,7 @@ import avatar from '../../assets/avatar.png'
 import cover from '../../assets/cover.png'
 import CV from '../../assets/CV-MCN.pdf'
 import profile from '../../assets/profile.jpeg'
-import { HomeBg, ImgCircle, ProfileBtn } from './style'
+import { HomeBg, ImgCircle } from './style'
 
 const Home: React.FC = () => {
   const { t, i18n } = useTranslation()
@@ -32,29 +32,21 @@ const Home: React.FC = () => {
     <Wrapper>
       <Header />
       <HomeBg image={cover} className=" d-none d-lg-block flex-grow-1">
-        <Container className="d-flex flex-column align-items-center justify-content-center h-100">
-          <ImgCircle src={profile} className="my-5" />
-          <h3 className="fw-bold">Mariana Carvalho Nascimento</h3>
-          <Link to="/qualifications">
-            <ProfileBtn> Frontend Developer</ProfileBtn>
+        <Container className="d-flex flex-column align-items-center justify-content-center ">
+          <Link to="/about">
+            <ImgCircle src={profile} className=" my-5" />{' '}
           </Link>
-          <a href={CV} download>
-            <ProfileBtn>Download CV</ProfileBtn>
-          </a>
+          <Link to="/about">
+            <h3 className="fw-bold text-white my-5">
+              Mariana Carvalho Nascimento
+            </h3>
+          </Link>
         </Container>
       </HomeBg>
       <HomeBg image={avatar} className="d-block d-lg-none flex-grow-1">
-        <Container className=" d-flex flex-column justify-content-center align-items-center ">
+        <Container className=" d-flex flex-column justify-content-center align-items-center">
           <ImgCircle src={profile} className=" my-5" />
-          <h1 className="text-center text-white">
-            Mariana Carvalho Nascimento
-          </h1>
-          <Link to="/qualifications">
-            <ProfileBtn> Frontend Developer</ProfileBtn>
-          </Link>
-          <a href={CV} download>
-            <ProfileBtn>Download CV</ProfileBtn>
-          </a>
+          <h1 className="text-center text-white">Mariana C. Nascimento</h1>
         </Container>
       </HomeBg>
       <Footer />
@@ -63,4 +55,3 @@ const Home: React.FC = () => {
 }
 
 export default memo(Home)
-// ratio ratio-1x1

@@ -22,5 +22,5 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(32, 35, 41);
+  background-color: #4d7cde;
 `

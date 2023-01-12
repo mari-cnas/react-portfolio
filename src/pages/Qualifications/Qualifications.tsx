@@ -2,20 +2,9 @@ import { memo, useEffect } from 'react'
 
 import { Col, Row } from 'react-bootstrap'
 // import IconHtml5 from 'react-devicon/html5/original-wordmark'
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaNodeJs,
-  FaGithub,
-  FaGitAlt,
-  FaLinux,
-} from 'react-icons/fa'
 import { GiUsaFlag, GiBrazilFlag } from 'react-icons/gi'
-import { GrGraphQl } from 'react-icons/gr'
 import { MdHttp } from 'react-icons/md'
-import { SiJavascript, SiTypescript, SiApollographql } from 'react-icons/si'
+import { SiApollographql } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 
 import Footer from 'components/Footer'
@@ -23,7 +12,9 @@ import Header from 'components/Header'
 
 import useTitle from 'hooks/useTitle'
 
-import { HomeBg, HomeContainer, Technology } from './style'
+import { Wrapper } from 'styles/GlobalStyles'
+
+import { QualiContainer, Technology } from './style'
 
 const Qualifications: React.FC = () => {
   const setTitle = useTitle()
@@ -34,12 +25,12 @@ const Qualifications: React.FC = () => {
   }, [])
 
   return (
-    <HomeBg>
+    <Wrapper>
       <Header />
-      <HomeContainer className="container d-flex flex-column ">
+      <QualiContainer className="container d-flex flex-column ">
         <div className="my-3">
-          <h3 className="text-center">Technologies</h3>
-          <Row className="row-cols-1 row-cols-md-3 border-top border-3 border-warning">
+          <h2 className="text-center">Technologies</h2>
+          <Row className="row-cols-1 row-cols-md-3 border-top border-3">
             <Col className="d-flex flex-column align-items-center">
               <h4>Front-end</h4>
               {/* <TechnologyBox name="HTML5" icon={<FaHtml5 />} /> */}
@@ -139,8 +130,8 @@ const Qualifications: React.FC = () => {
           </Row>
         </div>
         <div className="my-3 ">
-          <h3 className="text-center">Languages</h3>
-          <div className="d-flex justify-content-center border-top border-3 border-warning ">
+          <h2 className="text-center">Languages</h2>
+          <div className="d-flex justify-content-center border-top border-3  ">
             <Technology className="d-flex me-2 my-2 align-items-baseline justify-content-center">
               <div className="me-2">
                 <GiBrazilFlag style={{ color: 'green' }} size={22} />
@@ -155,9 +146,9 @@ const Qualifications: React.FC = () => {
             </Technology>
           </div>
         </div>
-      </HomeContainer>
+      </QualiContainer>
       <Footer />
-    </HomeBg>
+    </Wrapper>
   )
 }
 

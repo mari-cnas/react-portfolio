@@ -4,16 +4,23 @@ interface IImgBoxProps {
   image: string
 }
 
-export const QualiContainer = styled.div`
+export const HomeBg = styled.div`
+  background-color: #4d7cde;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+`
+
+export const HomeContainer = styled.div`
   height: 100%;
-  border-color: #8d4568;
 
   .row {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
   }
 
-  h2 {
+  h3 {
     color: white;
   }
 

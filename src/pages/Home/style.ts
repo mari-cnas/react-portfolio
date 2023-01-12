@@ -5,23 +5,20 @@ interface IImgBoxProps {
   image: string
 }
 
-export const HomeContainer = styled.div`
-  background-color: #d5254a;
-  display: flex;
-  flex-direction: column;
-  a {
-    color: #2e2e2e;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px pink;
-    font-weight: bold;
-  }
-`
-
 export const HomeBg = styled.div<IImgBoxProps>`
+  display: flex;
   background-image: url(${({ image }) => image});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  h1,
+  h3 {
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const ImgCircle = styled.img`
@@ -34,18 +31,5 @@ export const ImgCircle = styled.img`
     max-width: 200px;
     max-height: 200px;
     border: 5px solid black;
-  }
-`
-export const ProfileBtn = styled(Button)`
-  background-color: black;
-  border-color: black;
-  border-radius: 25px;
-  padding: 5px 30px;
-  font-size: 20px;
-  margin: 5px 5px;
-
-  &:hover {
-    background-color: #412b82;
-    border-color: #412b82;
   }
 `

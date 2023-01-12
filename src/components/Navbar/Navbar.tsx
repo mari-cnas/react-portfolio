@@ -4,6 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 
+import logo from '../../assets/logo.png'
 import { MenuMobile, MenuOverlay, NavSection } from './style'
 
 interface IBaseComponentProps {
@@ -35,7 +36,7 @@ const Navbar: React.FC<IBaseComponentProps> = ({ children }) => {
           isMenuOpened={isMenuOpened}
           className="d-flex flex-column d-md-none position-fixed"
         >
-          <NavSection className="container w-100">
+          <NavSection className="container  d-flex flex-column flex-grow-1">
             <div className=" d-flex flex-column justify-content-center mb-3">
               <AiOutlineClose
                 type="button"
@@ -43,9 +44,15 @@ const Navbar: React.FC<IBaseComponentProps> = ({ children }) => {
                 className="align-self-end"
               />
             </div>
-            <div className="d-flex flex-column justify-content-between">
-              <p>Mariana</p>
-              <Link to="/">Home</Link>
+            <div className="d-flex flex-column justify-content-between ">
+              <Link to="/">
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{ width: '30px', color: 'white' }}
+                />
+              </Link>
+              <Link to="/about">About</Link>
               <Link to="/qualifications">Qualifications</Link>
               <Link to="/background">Background</Link>
               <Link to="/portfolio">Portfolio</Link>
@@ -54,6 +61,7 @@ const Navbar: React.FC<IBaseComponentProps> = ({ children }) => {
         </MenuMobile>
         <NavSection className="w-100 d-none d-md-flex justify-content-between">
           <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
           <Link to="/qualifications">Qualifications</Link>
           <Link to="/background">Background</Link>
           <Link to="/portfolio">Portfolio</Link>

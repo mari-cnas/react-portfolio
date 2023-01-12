@@ -1,17 +1,10 @@
-import Row from 'react-bootstrap/esm/Row'
 import styled from 'styled-components'
 
 interface IImgBoxProps {
   image: string
 }
 
-export const HomeBg = styled.div`
-  background-color: #8d4568;
-  display: flex;
-  flex-direction: column;
-`
-
-export const HomeContainer = styled.div`
+export const PortfolioContainer = styled.div`
   height: 100%;
 
   /* unvisited link */
@@ -27,7 +20,7 @@ export const HomeContainer = styled.div`
 
   /* mouse over link */
   a:hover {
-    color: grey;
+    color: white;
   }
 
   /* selected link */

@@ -17,6 +17,7 @@ export const ProjectCard = styled.div`
     top: -5px;
     transform: scale(1.1);
     box-shadow: 0 0 11px black;
+    background-color: grey;
   }
 
   .info {

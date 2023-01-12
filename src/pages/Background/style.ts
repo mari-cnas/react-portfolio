@@ -1,67 +1,102 @@
 import styled from 'styled-components'
 
 export const BackBg = styled.div`
-  background-color: #8d4568;
+  --primary: #8d4568;
+  --primary-gradient: #4d7cde;
 
-  h3 {
-    font-size: 30px;
-    text-align: start;
-    margin: 10px 10px 10px 20px;
-    color: white;
+  .section-header {
+    text-align: center;
   }
-
-  p {
-    font-size: 14px;
+  .bg-gradient_solid {
+    background: var(--primary-gradient);
+    color: #fff;
   }
-`
-
-export const BgContainer = styled.div``
-
-export const TimeBox = styled.div`
-  float: right;
-  margin: 0px 0px 0px 20px;
-  width: 46.5%;
-  padding: 0px 50px 43px;
-  background: rgb(242, 242, 242);
-  position: relative;
-
-  &:before {
+  .steps {
+    position: relative;
+    margin-top: 32px;
+  }
+  .steps::after {
     content: '';
-    border-right: 20px solid rgb(242, 242, 242);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
     position: absolute;
-    top: 50%;
-    left: -20px;
-    transform: translateY(-50%);
+    width: 1px;
+    background-color: white;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 50%;
   }
 
-  .time-icon:before {
-    content: '';
+  .steps .content p {
+    color: #676767;
+    font-size: 16px;
+  }
+
+  .steps .content h2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #676767;
+  }
+
+  .steps-container {
+    position: relative;
+    background-color: inherit;
+    width: calc(50% + 32px);
+  }
+
+  .steps-container .content {
+    padding: 32px;
+    background-color: white;
+    position: relative;
+    border-radius: 0px 0px 80px 0px;
+    box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
+  }
+
+  .steps .steps-container:nth-child(even) {
+    left: calc(50% - 32px);
+    flex-direction: row-reverse;
+  }
+
+  .steps-container {
+    display: flex;
+  }
+
+  .steps .steps-container .date {
+    font-weight: 900;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    width: 62px;
+    height: 62px;
+    background-color: var(--primary);
     border-radius: 50%;
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    left: -35px;
-    bottom: 0px;
-    width: 10px;
-    height: 10px;
-    background: #199030;
-    padding: 2px;
-    box-sizing: initial;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 777;
   }
 
-  .time-line:before {
-    content: '';
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    left: -30px;
-    bottom: 0px;
-    width: 0.5px;
-    height: 100%;
-    background: black;
-    padding: 2px;
-    box-sizing: initial;
+  .step-line {
+    width: 40px;
+    background-color: #fff;
+    height: 1px;
+    margin-top: 31px;
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 767px) {
+    .steps::after {
+      left: 32px;
+    }
+    .steps-container {
+      left: 0;
+      flex-direction: row-reverse;
+      width: auto;
+      margin-bottom: 16px;
+    }
+    .steps .steps-container:nth-child(even) {
+      left: 0;
+    }
   }
 `
