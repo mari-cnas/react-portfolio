@@ -45,17 +45,21 @@ const Navbar: React.FC<IBaseComponentProps> = ({ children }) => {
               />
             </div>
             <div className="d-flex flex-column justify-content-between ">
-              <Link to="/">
-                <img
-                  src={logo}
-                  alt="logo"
-                  style={{ width: '30px', color: 'white' }}
-                />
+              <Link to="/" className="mb-5">
+                Mariana CN
               </Link>
-              <Link to="/about">About</Link>
-              <Link to="/qualifications">Qualifications</Link>
-              <Link to="/background">Background</Link>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/about" className="my-5">
+                About
+              </Link>
+              <Link to="/qualifications" className="my-5">
+                Qualifications
+              </Link>
+              <Link to="/background" className="my-5">
+                Background
+              </Link>
+              <Link to="/portfolio" className="my-5">
+                Portfolio
+              </Link>
             </div>
           </NavSection>
         </MenuMobile>

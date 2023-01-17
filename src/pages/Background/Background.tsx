@@ -59,8 +59,8 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    COCA-COLA FEMSA <br /> (Empresa multinacional no segmento
-                    alimentício) (12/2021-ATUAL)
+                    COCA-COLA FEMSA - Empresa multinacional no segmento
+                    alimentício <br /> (12/2021-ATUAL)
                   </h2>
                   <p className="text-muted">
                     Programador de Manutenção Planejamento e controle usando o
@@ -82,8 +82,9 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    CESBE ENGENHARIA (Empresa de grande porte no segmento
-                    construção civil)(01/12/2020 – 06/05/2021)
+                    CESBE ENGENHARIA - Empresa de grande porte no segmento
+                    construção civil <br />
+                    (01/12/2020 – 06/05/2021)
                   </h2>
                   <p className="text-muted">
                     Controladora de Manutenção (PCM) Suprimento de equipamentos
@@ -106,7 +107,8 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    CIRCUIBRAS (Empresa de médio porte no segmento eletrônica)
+                    CIRCUIBRAS - Empresa de médio porte no segmento eletrônica
+                    <br />
                     (24/04/2017 – 25/11/2020)
                   </h2>
                   <p className="text-muted">
@@ -207,9 +209,10 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    COCA-COLA FEMSA <br /> (Empresa multinacional no segmento
-                    alimentício) (12/2021-ATUAL)
+                    COCA-COLA FEMSA -<br /> Empresa multinacional no segmento
+                    alimentício (12/2021-ATUAL) <br />
                   </h2>
+                  <p>Programador de Manutenção</p>
                 </div>
                 <i className="step-line" />
                 <div className="date">2022</div>
@@ -217,9 +220,11 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    CESBE ENGENHARIA (Empresa de grande porte no segmento
-                    construção civil)(01/12/2020 – 06/05/2021)
+                    CESBE ENGENHARIA - <br />
+                    Empresa de grande porte no segmento construção civil
+                    (01/12/2020 – 06/05/2021)
                   </h2>
+                  <p>Controlador de Manutenção</p>
                 </div>
                 <i className="step-line" />
                 <div className="date">2021</div>
@@ -227,9 +232,10 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    CIRCUIBRAS (Empresa de médio porte no segmento eletrônica)
+                    CIRCUIBRAS - Empresa de médio porte no segmento eletrônica
                     (24/04/2017 – 25/11/2020)
                   </h2>
+                  <p>Técnico de planejamento e controle de manutenção</p>
                 </div>
                 <i className="step-line" />
                 <div className="date">2020</div>
@@ -237,7 +243,7 @@ const Background: React.FC = () => {
               <div className="steps-container">
                 <div className="content">
                   <h2>
-                    ESPECIALIZAÇÃO-GESTÃO DO DESENVOLVIMENTO DE PRODUTOS - UTFPR
+                    ESPECIALIZAÇÃO-GESTÃO DO DESENV. DE PRODUTOS - UTFPR
                     (04/2015-12/2016)
                   </h2>
                 </div>

@@ -1,10 +1,21 @@
-import { Button } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import styled from 'styled-components'
 
 import desktop from '../../assets/desktop.jpg'
 
-export const AboutBg = styled.div`
-  background-color: #8d4568;
+export const AboutBg = styled(Container)`
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  text-align: center;
+  line-height: 25px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1023px) {
+    width: 50%;
+  }
 `
 
 export const AboutImg = styled.div`
@@ -20,7 +31,6 @@ export const ProfileBtn = styled(Button)`
   border-radius: 25px;
   padding: 5px 30px;
   font-size: 20px;
-  margin: 5px 5px;
 
   &:hover {
     background-color: black;
